@@ -23,6 +23,13 @@ dependencies {
     testImplementation("org.springframework.boot:spring-boot-starter-test")
     implementation("org.springframework.boot:spring-boot-starter-web")
     runtimeOnly("org.springframework.boot:spring-boot-devtools")
+
+    // db
+    implementation("org.springframework.boot:spring-boot-starter-data-jpa")
+
+    // database: embedded postgresql
+    runtimeOnly("org.postgresql:postgresql")
+    implementation("com.opentable.components:otj-pg-embedded:0.13.3")
 }
 
 tasks.withType<KotlinCompile> {
